@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipster</title>
+    <style>
+        /* Reset default margin and padding for the body */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            height: 100vh; /* Full viewport height */
+        }
+
+        header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Larger images */
+        .logo-image {
+            width: 300px; /* Adjust the size as needed */
+        }
+
+        .additional-image {
+            width: 300px; /* Adjust the size as needed */
+        }
+
+        /* Style for the search bar */
+        #search-bar {
+            width: 300px;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        /* Navigation menu styles */
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: white;
+        }
+
+        .menu-button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .menu-options {
+            display: block; /* Always open */
+            background-color: #f4f4f4;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .menu-options a {
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            color: black;
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Highlight the current page */
+        .current-page {
+            background-color: #0073e6;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation Menu -->
+        <div class="menu">
+            <div class="menu-button">
+                &#9776; <!-- Unicode symbol for three horizontal bars -->
+            </div>
+            <div class="menu-options">
+                <a href="#" class="current-page">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">Edit</a>
+                <a href="#">History</a>
+                <a href="#">Recommended</a>
+            </div>
+        </div>
+        <!-- Logo Image -->
+        <img class="logo-image" src="https://chipster.org/images/WebLogo1200-1024x270.png" alt="Chipster Logo">
+        <!-- Additional Image -->
+        <img class="additional-image" src="https://chipster.org/images/Chippies.png" alt="Additional Image">
+    </header>
+    <!-- Search Bar -->
+    <input type="text" id="search-bar" placeholder="Search...">
+    <main>
+        <!-- Home Page Content -->
+        <h2>Welcome to Chipster</h2>
+        <p>This is the home page content where you can search for articles or explore recommended articles.</p>
+    </main>
+    <footer>
+        &copy; 2021 Chipster
+    </footer>
+</body>
+</html>
